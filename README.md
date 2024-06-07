@@ -100,10 +100,10 @@ Definir precio Como real
 	Leer peso
 	
 	Dimension costopeso[4]
-	costopeso[0] <- "1) 1 - 3 kg el valor es de $2"
-	costopeso[1] <- "2) 4 - 6 kg el valor es de $5"
-	costopeso[2] <- "3) 7 - 10 kg el valor es de $7"
-	costopeso[3] <- "4) 11 - 15 kg el valor es de $12"
+	costopeso[0] <- "1) 1 - 3 kg el valor es de $6"
+	costopeso[1] <- "2) 4 - 6 kg el valor es de $12"
+	costopeso[2] <- "3) 7 - 10 kg el valor es de $20"
+	costopeso[3] <- "4) 11 - 15 kg el valor es de $30"
 
 12. Se solicita ingresar el destino, que será almacenado en la variable DESTINOS.
 
@@ -113,18 +113,18 @@ Definir precio Como real
 13. Según el peso indicado por usuario varía la constante TOTALENVIO que calculará el precio y que añade el costo fijo según el destino.
 
     Si peso >= 1 y peso <= 3 Entonces
-		  totalenvio <- (2 * peso) + 10
+		  totalenvio <- (2 * 3) + 10
 	  finsi
 	  Si peso >= 4 y peso <= 6 Entonces
-		  totalenvio <- (5 * peso) + 10
+		  totalenvio <- (2 * 6) + 10
 	  finsi
 	
 	  Si peso >= 7 y peso <= 10 Entonces
-		  totalenvio <- (7 * peso) + 10
+		  totalenvio <- (2 * 10) + 10
 	  FinSi
 	
 	  Si peso >= 11 y peso <= 15 Entonces
-		  totalenvio <- (12 * peso) + 10
+		  totalenvio <- (2 * 15) + 10
 	  Sino
 		  Escribir "Ingrese una opción de peso válida"
 	  FinSi
